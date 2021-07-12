@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,17 +19,17 @@ p {
     color: #042A5A;
     font-weight: 100;
     padding: .5vh 5vw;
-    font-size: 1.1em;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 header {
     position: fixed;
     justify-content: center;
-    background-color: beige;
+    background-color: rgb(157, 139, 139);
     padding-top: 2vh;
     width: 100%;
     z-index: 50;
+    opacity: 80%;
 }
 
 header .line {
@@ -40,25 +41,79 @@ header .line {
 header h1 {
     display: flex;
     justify-content: center;
-    font-size: 1.2em;
-    line-height: 1.5em;
     font-family: 'Yomogi', cursive;
     text-transform: uppercase;
     color: #042A5A;
-    padding: 1em 1em;
+    font-size: 1.2em;
+    line-height: 1.5em;
     font-size: 2em;
     line-height: 1.5em;
-    padding: .5em 1em;
 }
 
 
 /*Main von header nach unten positioniert*/
 
 main {
-    padding-top: 15vh;
+    padding-top: 7vh;
 }
 
-h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.3em;
+
+/*Start at 'Git & Termnial Grundlagen'*/
+
+section:nth-child(1) {
+    position: relative;
+    padding-top: 10vh;
+    width: 77vw;
+    margin: 0 10vw;
+    height: auto;
+}
+
+.small-navigation {
+    font-family: 'Yomogi', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.small-navigation h2 {
+    font-size: 3em;
+}
+
+.small-navigation span {
+    display: flex;
+    justify-content: space-around;
+    opacity: 50%;
+    font-size: .5em;
+    padding: 4vh 0 5vh 0;
+}
+
+section:nth-child(1) h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    padding: 0 0 4vh 0;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    display: flex;
+    justify-content: center;
+    padding: 4vh 0 0 0;
+}
+
+
+/*Hier enden die ersten texte...h2,h4,p etc..*/
+
+section article:nth-child(2) {
+    padding: 18vh 0 0 0;
+}
+
+section article:nth-child(3) {
+    padding: 18vh 0 0 0;
+}
+
+section article:nth-child(4) {
+    padding: 18vh 0 0 0;
 }
