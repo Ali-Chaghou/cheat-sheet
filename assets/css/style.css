@@ -22,7 +22,7 @@ nav,
 a,
 p {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: #042A5A;
