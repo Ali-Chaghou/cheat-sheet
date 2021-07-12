@@ -1,44 +1,50 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    color: #042A5A;
-    padding: .4em 1em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #042a5a;
+  padding: 0.4em 1em;
 }
-
 
 /*Header mit nav*/
 
 nav,
-a,
-p {
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    color: #042A5A;
-    font-weight: 100;
-    padding: .5vh 5vw;
-    font-size: 1.1em;
+a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #042a5a;
+  font-weight: 100;
+  padding: 0.5vh 5vw;
+  font-size: 1.1em;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 50;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
 }
 
 header .line {
-    position: absolute;
-    border: 1px solid #042A5A;
-    width: 100%;
+  position: absolute;
+  border: 1px solid #042a5a;
+  width: 100%;
+}
+/* .commands {
+  margin-top: 50px;
+} */
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
 }
