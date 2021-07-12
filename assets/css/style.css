@@ -35,6 +35,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 50;
+    margin-bottom: 10vh;
 }
 
 header .line {
