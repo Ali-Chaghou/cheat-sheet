@@ -5,39 +5,50 @@
     padding: 0;
 }
 
+h1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #042a5a;
+    padding: 0.4em 1em;
+}
+
 
 /*Header mit nav*/
 
-header nav,
-a,
-p {
+nav,
+a {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Yomogi', cursive;
-    color: #042A5A;
-    font-weight: 100;
-    padding: .5vh 5vw;
-    font-size: 1.3em;
+    font-family: "Open Sans", sans-serif;
+    color: #042a5a;
+    font-weight: 400;
+    padding: 0.5vh 5vw;
+    font-size: 1.1em;
 }
 
 header {
     position: fixed;
-    justify-content: center;
-    background-color: beige;
-    padding-top: 2vh;
     width: 100%;
     z-index: 50;
 }
 
-header h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Yomogi', cursive;
-    text-transform: uppercase;
-    color: #042A5A;
-    font-size: 2em;
-    line-height: 1.5em;
-    padding: .5em 1em;
+header .line {
+    position: absolute;
+    border: 1px solid #042a5a;
+    width: 100%;
+}
+
+
+/* .commands {
+  margin-top: 50px;
+} */
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
 }
