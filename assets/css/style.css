@@ -1,35 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-}
-
-h1 {
-    position: absolute;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    color: #042A5A;
-    padding: .4em 1em;
 }
 
 
 /*Header mit nav*/
 
-nav,
-a {
+header nav,
+a,
+p {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Yomogi', cursive;
     color: #042A5A;
     font-weight: 100;
     padding: .5vh 5vw;
     font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 header {
     position: fixed;
+    justify-content: center;
+    background-color: beige;
+    padding-top: 2vh;
     width: 100%;
     z-index: 50;
 }
@@ -38,4 +35,30 @@ header .line {
     position: absolute;
     border: 1px solid #042A5A;
     width: 100%;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Yomogi', cursive;
+    text-transform: uppercase;
+    color: #042A5A;
+    padding: 1em 1em;
+    font-size: 2em;
+    line-height: 1.5em;
+    padding: .5em 1em;
+}
+
+
+/*Main von header nach unten positioniert*/
+
+main {
+    padding-top: 15vh;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
 }
