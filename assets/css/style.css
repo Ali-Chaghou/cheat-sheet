@@ -6,6 +6,13 @@
 }
 
 
+/*Allgemein für alles elemente*/
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 /*Header mit nav*/
 
 header nav,
@@ -23,11 +30,12 @@ p {
 
 header {
     position: fixed;
-    background-color: rgb(119, 128, 99);
+    background: rgb(34, 193, 195);
+    background: radial-gradient(circle, rgba(34, 193, 195, 1) 24%, rgba(250, 253, 45, 0.7777485994397759) 65%, rgba(250, 253, 45, 0.7777485994397759) 77%);
     padding-top: 2vh;
     width: 100%;
     z-index: 50;
-    opacity: 80%;
+    opacity: 70%;
 }
 
 header .line {
@@ -38,13 +46,12 @@ header .line {
 
 .fas {
     font-size: 1em;
-    color: #3de;
+    color: #ab3c13;
     padding-top: 50%;
 }
 
 nav>a:hover {
     color: #333;
-    text-decoration: underline;
     font-family: 'Lobster', cursive;
     font-size: 2em;
 }
@@ -294,4 +301,33 @@ section:nth-child(5) h2 {
     font-size: 3em;
     line-height: 1.5em;
     padding: 0 0 5vh 0;
+}
+
+
+/*Ab hier git init usw*/
+
+section:nth-child(6) {
+    position: relative;
+    padding-top: 10vh;
+    width: 77vw;
+    margin: 0 10vw;
+    height: auto;
+    padding-top: 30vh;
+}
+
+section:nth-child(6) .bg-grey {
+    font-size: 3em;
+    padding: 3vh 0 3vh 1vw;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F8F8F8;
+}
+
+section:nth-child(6) h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    padding: 0 0 4vh 0;
 }
