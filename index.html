@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+
+    <script src="https://kit.fontawesome.com/af437eeca2.js" crossorigin="anonymous"></script>
+
+
     <title>Git-Commands for dummies</title>
 </head>
 
@@ -13,31 +20,34 @@
     <header>
 
         <nav>
+
             <a href="#">commands</a>
+
+            <a> <i class="fas fa-code-branch"></i></a>
+
             <a href="#">BashTips help</a>
         </nav>
-        <h1>Git-Commands for dummies </h1>
         <span class="line"></span>
     </header>
     <main>
         <!-- <section class="commands">
-                 <article>
-                     <h3>Wie erstelle ich einen neuen Ordner?</h3>
-                     <p class="info1">mkdir - make directories</p>
-                     <p class="info2">Mit diesem Befehl kann man einen oder mehrere Ordner erstellen</p>
-                     <p class="code"><span>mkdir</span>MeinOrdner</p>
-                     <p class="descr">Erstellt den Ordner „MeinOrdner“ im aktuellen Arbeitsverzeichnis.</p>
-                     <p class="code"><span>mkdir</span>MeinOrdner1 MeinOrdner2</p>
-                     <p class="descr">Erstellt die beiden Ordner „MeinOrdner1“ und „MeinOrdner2“ im aktuellen Arbeitsverzeichnis.</p>
-                 </article>
-             </section> -->
+            <article>
+                <h3>Wie erstelle ich einen neuen Ordner?</h3>
+                <p class="info1">mkdir - make directories</p>
+                <p class="info2">Mit diesem Befehl kann man einen oder mehrere Ordner erstellen</p>
+                <p class="code"><span>mkdir</span>MeinOrdner</p>
+                <p class="descr">Erstellt den Ordner „MeinOrdner“ im aktuellen Arbeitsverzeichnis.</p>
+                <p class="code"><span>mkdir</span>MeinOrdner1 MeinOrdner2</p>
+                <p class="descr">Erstellt die beiden Ordner „MeinOrdner1“ und „MeinOrdner2“ im aktuellen Arbeitsverzeichnis.</p>
+            </article>
+        </section> -->
         <section>
             <article>
                 <div class="small-navigation">
-                    <h2>Git & Terminal Grundlagen<br>
-                        <span>Definition</span>
-                        <div class="green-line-under-terminal"></div>
-                    </h2>
+                    <h1>Git-Commands for dummies<br>
+                        <span>Definition</span></h1>
+                    <div class="green-line-under-terminal"></div>
+
                 </div>
                 <div>
                     <h4>Was ist Terminal?</h4>
@@ -73,6 +83,194 @@
                 <div class="image4">
                     <a href="#"><img src="assets/img/digitale-rundschau-git-workflow-6691d2e3.webp"></a>
                 </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h4>1. Schnelleinstieg – Die wichtigsten Git Befehle</h4>
+                <div class="bg-grey">$ Git init</div>
+                <p><mark>Ein lokales Verzeichnis als Git Repository initialisieren.</mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ Git remote add origin https://gitlab.com/dr/projekt.git</div>
+                <p><mark>Das lokale Projekt mit dem entfernten Git Repository verknüpfen.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ Git status</div>
+                <p><mark>Den aktuellen Stand zu Änderungen, Branches, Commits anzeigen.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git add .</div>
+                <p><mark>Das aktuelle Projekt dem Staging-Bereich hinzufügen.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git reset HEAD datei.js</div>
+                <p><mark>Datei aus dem Staging-Bereich zurücknehmen.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git commit -m "initial commit"</div>
+                <p><mark>Den aktuellen Stand aus dem Staging- in den Index-Bereich aufnehmen.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git push</div>
+                <p><mark>Den aktuellen Stand des Git-Repositories auf das lokale Repository ziehen/aktualisieren.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git branch</div>
+                <p><mark>Damit erstellst du einen neuen Zweig, in dem z.B. ein Feature entwickelt werden kann.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git checkout -b feature-01 master</div>
+                <p><mark>Erzeugt einen Feature-Branch aus dem des Master-Branch.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git diff feature-01 master</div>
+                <p><mark>Zeigt Unterschiede vom Quell- zum Zielbranch an.
+                </mark></p>
+            </article>
+
+            <article>
+                <div class="bg-grey">$ git merge feature-01</div>
+                <p><mark>Fügt Änderungen aus dem Feature-Branch mit einem anderen, z.B. dem Master zusammen.
+                </mark></p>
+
+                <h6>Und nun der Reihe nach...</h6>
+            </article>
+
+        </section>
+        <section>
+            <article>
+                <h4>2. Was ist Git?</h4>
+                <p>
+                    Git ein weltweit verbreitetes Tool zur Versionsverwaltung von Software-Versionen und zur Kollaboration. Git wurde von Linus Torvalds bereits 2005 entwickelt und gilt mittlerweile als Industriestandard.
+                </p>
+
+                <p>
+                    Software-Projekte werden als Repositories dezentral verwaltet, dass heißt, jeder Entwickler hat sein eigenes lokales Repository, in dem die Versionen gespeichert werden. Die Versionen werden dann in einem gemeinsamen Repository zentral zusammengefügt.
+                </p>
+
+                <p>
+                    Das zentrale Repository kann lokal oder bei einem Git-Hosting-Provider angelegt werden. Bekannte Provider für das Hosting von Software-Projekten sind GitHub, GitLab und Bitbucket.
+                </p>
+                <div class="GitLab">
+                    <img class="GitLab-img" src="assets/img/gitlab-1024x683.jpeg" alt="GitLab">
+                    <p>
+                        Gitlab wird als DevOps-Plattform bezeichnet, mit der Entwickler ihre Software-Projekte hosten, verwalten und durch Continuous Integration das Deployment automatisieren können.
+                    </p>
+                </div>
+
+            </article>
+        </section>
+        <section>
+            <article class="Git-Lokal">
+                <h2>Voraussetzungen</h2>
+                <h6>Git Lokal installieren</h6>
+                <p>
+                    Git muss lokal installiert werden, damit du es nutzen kannst. Die Download-Links für Windows und Mac, bzw. die Installation per Package Manager unter Linux findest du hier:
+                </p>
+                <h5>Windows:
+                    <a href="https://git-scm.com/download/win">
+                        https://git-scm.com/download/win
+                    </a>
+                </h5>
+                <h5>Mac:
+                    <a href="https://git-scm.com/download/mac">
+                        https://git-scm.com/download/mac
+                    </a>
+                </h5>
+                <h5>Linux:
+                    <a href="https://git-scm.com/download/linux">
+                        https://git-scm.com/download/linux
+                    </a>
+                </h5>
+                <h6>
+                    Account bei einem Git-Hosting-Provider anlegen
+                </h6>
+                <p>
+                    Bei den bereits genannten führenden Git-Hostern musst du einen Account angelegen, über den das entfernte Repository erstellt werden kann. Hier die Links der von mir empfohlenen Anbieter, wobei es auch diverse weitere Anbieter gibt:
+                </p>
+                <div class="link-part">
+                    <h5>GitHub:
+                        <a href="https://github.com/">
+                            https://github.com/
+                        </a>
+                    </h5>
+                    <h5>GitLab:
+                        <a href="https://gitlab.com/users/sign_in">
+                            https://gitlab.com/users/sign_in
+                        </a>
+                    </h5>
+                    <h5>Bitbucket:
+                        <a href="https://bitbucket.org/account/signup/">
+                            https://git-scm.com/https://bitbucket.org/account/signup/
+                        </a>
+                    </h5>
+                </div>
+                <h6>
+                    Graphical User Interface (GUI) verwenden
+                </h6>
+                <p>
+                    Willst du Git nicht über das Command Line Interface (CLI) verwenden, kannst du auch eine GUI installieren, das je nach Tool die einzelnen User, Commits, Branches und/oder Logs grafisch darstellt. Eine Auswahl einiger Tools findest du hier:
+                </p>
+                <div class="link-part">
+                    <h5> (Windows, Mac)
+                        <a href="https://www.sourcetreeapp.com/">
+                        sourcetree
+                    </a>
+                    </h5>
+                    <h5>(Windows, Mac)
+                        <a href="https://desktop.github.com/">
+                       GitHub Desktop
+                    </a>
+                    </h5>
+                    <h5>(Windows)
+                        <a href="https://tortoisegit.org/">
+                        MercurialGit
+                    </a>
+                    </h5>
+                    <h5><mark>Und viele weitere, die du hier findest</mark>
+                        <a href="https://git-scm.com/downloads/guis/">https://git-scm.com/downloads/guis/</a>
+                    </h5>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>4. Git-Befehle ausführlich erklärt</h2>
+            <div>
+                <img src="assets/img/git_übersicht-1024x576.jpeg" alt="Git Workflow">
+                <p>Git Übersicht: Die wichtigsten Befehle für den täglichen Workflow</p>
+            </div>
+
+        </section>
+        <section>
+            <article>
+                <h4>4.1 git init</h4>
+                <p><mark>Damit ein lokales Verzeichnis erstmals als Git Repository initialisiert wird, verwendest du</mark></p>
+                <div class="bg-grey">$ Git init</div>
+                <p><mark>
+                    Ab diesem Zeitpunkt werden alle Dateien in diesem Verzeichnis versioniert. Mit
+                </mark></p>
+                <div class="bg-grey">$ Git status</div>
+                <p><mark>
+                    kannst du testen, ob die Initialisierung erfolgreich war, die Konsolenausgabe zeigt dir auf welchem Branch du dich befindet („On branch master“). Außerdem wurde damit ein Verzeichnis Namens .git angelegt, in dem deine Versionen gespeichert werden.
+                </mark></p>
             </article>
         </section>
     </main>
