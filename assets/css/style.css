@@ -12,9 +12,8 @@ header nav,
 a,
 p {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Yomogi', cursive;
     color: #042A5A;
     font-weight: 100;
@@ -24,8 +23,7 @@ p {
 
 header {
     position: fixed;
-    justify-content: center;
-    background-color: rgb(157, 139, 139);
+    background-color: rgb(119, 128, 99);
     padding-top: 2vh;
     width: 100%;
     z-index: 50;
@@ -38,23 +36,24 @@ header .line {
     width: 100%;
 }
 
-header h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Yomogi', cursive;
-    text-transform: uppercase;
-    color: #042A5A;
-    font-size: 1.2em;
-    line-height: 1.5em;
+.fas {
+    font-size: 1em;
+    color: #3de;
+    padding-top: 50%;
+}
+
+nav>a:hover {
+    color: #333;
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
     font-size: 2em;
-    line-height: 1.5em;
 }
 
 
 /*Main von header nach unten positioniert*/
 
 main {
-    padding-top: 7vh;
+    padding-top: 10vh;
 }
 
 
@@ -74,8 +73,12 @@ section:nth-child(1) {
     justify-content: center;
 }
 
-.small-navigation h2 {
+.small-navigation>h1 {
     font-size: 3em;
+    font-family: 'Yomogi', cursive;
+    text-transform: uppercase;
+    color: #042A5A;
+    font-size: 2.5em;
 }
 
 .small-navigation span {
@@ -93,6 +96,9 @@ section:nth-child(1) h4 {
     font-size: 2em;
     padding: 0 0 4vh 0;
 }
+
+
+/*Hier werden alle Bilder Positioniert*/
 
 .image1,
 .image2,
@@ -120,4 +126,172 @@ section article:nth-child(3) {
 
 section article:nth-child(4) {
     padding: 18vh 0 0 0;
+}
+
+
+/*HIer beginnt der abschnitt mit demm Schnelleinstieg*/
+
+section:nth-child(2) {
+    position: relative;
+    padding-top: 10vh;
+    width: 77vw;
+    margin: 0 10vw;
+    height: auto;
+}
+
+section:nth-child(2) h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Yomogi', cursive;
+    text-transform: uppercase;
+    color: #042A5A;
+    font-size: 2em;
+    line-height: 1.5em;
+    padding: 0 0 20vh 0;
+}
+
+section:nth-child(2) .bg-grey {
+    font-size: 3em;
+    padding: 3vh 0 3vh 1vw;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F8F8F8;
+}
+
+section:nth-child(2) p {
+    padding: 1vh 0 0 0;
+    font-size: 2em;
+}
+
+section:nth-child(2) article {
+    padding: 25vh 0 0 0;
+}
+
+section:nth-child(2) h6 {
+    padding: 15vh 0 0 0;
+    font-size: 1.5em;
+}
+
+
+/*Ab hier gehts los mit 2. Was ist Git?*/
+
+section:nth-child(3) {
+    position: relative;
+    padding-top: 10vh;
+    width: 77vw;
+    margin: 0 10vw;
+    height: auto;
+}
+
+section:nth-child(3) h4 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #042A5A;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    line-height: 1.5em;
+    padding: 0 0 20vh 0;
+}
+
+section:nth-child(3) p {
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    color: #333;
+    padding: 0 0 10vh 0;
+}
+
+section:nth-child(3) span {
+    color: #066019;
+    font-family: 'Lobster', cursive;
+}
+
+.GitLab {
+    display: flex;
+}
+
+.GitLab-img {
+    justify-content: left;
+    width: 450px;
+    height: 450px;
+}
+
+.GitLab p {
+    text-align: right;
+    align-items: center;
+}
+
+
+/*Neue Section für das Thema Voraussetzungen */
+
+section:nth-child(4) {
+    position: relative;
+    padding-top: 10vh;
+    width: 77vw;
+    margin: 0 10vw;
+    height: auto;
+    padding-top: 30vh;
+}
+
+section:nth-child(4) h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #042A5A;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    line-height: 1.5em;
+    padding: 0 0 5vh 0;
+}
+
+section:nth-child(4) h6 {
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding: 10vh 0 10vh 0;
+}
+
+section:nth-child(4) p {
+    padding-bottom: 10vh;
+}
+
+section:nth-child(4) h5 {
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: 2vh;
+}
+
+section:nth-child(4) h5>a {
+    font-size: 1em;
+}
+
+.link-part {
+    font-size: .7em;
+}
+
+
+/*Ab hier geht der 4 Punkt beschrieben*/
+
+section:nth-child(5) {
+    position: relative;
+    padding-top: 10vh;
+    width: 77vw;
+    margin: 0 10vw;
+    height: auto;
+    padding-top: 30vh;
+}
+
+section:nth-child(5) h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #042A5A;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    line-height: 1.5em;
+    padding: 0 0 5vh 0;
 }
